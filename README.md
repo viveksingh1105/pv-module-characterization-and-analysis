@@ -2,50 +2,53 @@
 
 ## Overview
 
-This project investigates the electrical characteristics of a photovoltaic (PV)
-module using a laboratory PV emulator platform. The objective was to study the
-relationship between voltage, current, irradiance, and output power and to
-understand the maximum power point behavior of PV systems.
+This project investigates the electrical characteristics of a photovoltaic (PV) module using a laboratory PV emulator platform. The objective was to study the relationship between voltage, current, irradiance, and output power and to identify the maximum power point (MPP) of the PV module.
 
 ## Objectives
 
 - Study I–V characteristics of a PV module
 - Study P–V characteristics of a PV module
 - Observe influence of irradiance variation
-- Observe influence of temperature variation
-- Understand maximum power point (MPP) behavior
+- Observe nonlinear behavior of PV output power
+- Identify maximum power point (MPP)
 
 ## Experimental Setup
 
-A photovoltaic emulator platform was used to simulate PV module behavior under
-different environmental conditions such as varying irradiance and temperature.
-The emulator allowed controlled adjustment of operating conditions for analysis.
+A photovoltaic emulator platform was used to simulate PV module behavior under different operating conditions. The emulator allowed controlled variation of voltage and current to observe the characteristic behavior of a PV module.
 
 ## Methodology
 
-The following steps were performed:
+The following procedure was performed:
 
 1. Configure PV emulator parameters
-2. Adjust irradiance levels
-3. Observe voltage-current characteristics
-4. Evaluate output power variation
-5. Identify maximum power point behavior
+2. Vary operating voltage levels
+3. Record output current values
+4. Compute output power using
+
+   P = V × I
+
+5. Plot I–V and P–V characteristics using MATLAB
 
 ## Results and Observations
 
-Typical PV characteristics were observed:
+The obtained I–V characteristic followed the expected behavior of a photovoltaic module.
 
-- Output current increases with irradiance
-- Voltage varies slightly with irradiance
-- Output power shows a clear maximum operating point
-- Temperature variation affects module efficiency
+The output current remained approximately constant with increasing voltage until a critical voltage level was reached. Beyond this point, the current decreased rapidly, indicating operation close to the open-circuit voltage region.
+
+The maximum power point (MPP) was observed near the knee region of the I–V curve, where the product of voltage and current reached its maximum value.
+
+The P–V characteristic confirmed the nonlinear relationship between voltage and output power and clearly indicated the maximum power operating region.
 
 ## Tools Used
 
-Laboratory PV emulator platform  
-MATLAB
+- MATLAB
+- PV emulator laboratory setup
+
+## Repository Structure
+
+scripts/ → MATLAB analysis script  
+plots/ → generated I–V and P–V curves  
 
 ## Learning Outcome
 
-This experiment provided practical understanding of photovoltaic module behavior
-and the importance of maximum power point tracking in renewable energy systems.
+This experiment provided practical understanding of photovoltaic module behavior and the importance of maximum power point tracking (MPPT) in renewable energy systems.
