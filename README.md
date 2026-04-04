@@ -29,6 +29,8 @@ The following procedure was performed:
 
 5. Plot I–V and P–V characteristics using MATLAB
 
+A nonlinear approximation of the PV module I–V characteristic was implemented in MATLAB to reproduce the experimentally observed knee-region behavior and maximum power point.
+
 ## Results and Observations
 
 The obtained I–V characteristic followed the expected behavior of a photovoltaic module.
